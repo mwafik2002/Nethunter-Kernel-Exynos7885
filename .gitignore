@@ -1,2 +1,25 @@
 toolchain
 out/*
+# build outputs
+out/
+build/
+dist/
+
+# archives
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# large binaries / images
+*.img
+*.iso
+*.bin
+
+# common kernel outputs
+Image
+zImage
+*.dtb
+*.dtbo
