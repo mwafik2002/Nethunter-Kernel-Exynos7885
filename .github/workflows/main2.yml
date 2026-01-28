@@ -41,7 +41,7 @@
             export PATH="${GITHUB_WORKSPACE}/toolchains/proton-clang/bin:${PATH}"
             export CROSS_COMPILE="${GITHUB_WORKSPACE}/toolchains/gcc/bin/aarch64-linux-android-"
             export CLANG_TRIPLE=aarch64-linux-gnu-
-            make O=out ARCH=${ARCH} ${DEFCONFIG}
+            make O=out ARCH=${ARCH} a30s_defconfig.txt
             make -j"$(nproc)" O=out ARCH=${ARCH} \
               CC=clang CROSS_COMPILE=${CROSS_COMPILE} CLANG_TRIPLE=${CLANG_TRIPLE}
             make -j"$(nproc)" O=out ARCH=${ARCH} dtbs
