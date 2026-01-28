@@ -33,8 +33,7 @@
         - name: Clone toolchains
           run: |
             mkdir -p toolchains
-            git clone --depth=1 https://github.com/kdrag0n/proton-clang.git toolchains/proton-clang
-            git clone --depth=1 https://github.com/LineageOS/android_prebuilts_gcc_linux-
+            git clone --depth=1 https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9.git toolchains/gcc
             x86_aarch64_aarch64-linux-android-4.9.git toolchains/gcc
 
         - name: Build kernel
